@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family+Source+Sans+3:wght@300&display=swap');
+
+:root{
+
+	/* hue saturation lightness alpha  */
+
+	--primary-color:hsla(203, 100%, 12%, 1);
+	--secondary-color: hsl(330, 87%, 17%);
+	--fruit-color:tomato;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Sans 3', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+
+	padding: 0;
+	margin: 0;
+}
+
+/*Start Back to Top*/
+.btn-backtotops{
+	background-color: var(--secondary-color);
+	color: #fff;
+	border-radius: 10px;
+
+	padding: 10px;
+
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+
+	z-index: 200;
+}
+/*End Back to Top*/
+
+/*Start Header Section*/
+header{
+	height:100vh;
+	background: linear-gradient(30deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5)),url("./assets/img/frst.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	position: relative;
+}
+
+/*Start nav Bar*/
+.navbar{
+	background: linear-gradient(rgba(0, 0, 0, 0.3),var(--primary-color));
+	padding: 20px 30px;
+
+	transition: all .7s;
+}
+
+.navmenus{
+	background: linear-gradient(rgba(0, 0, 0, 0.6),var(--primary-color));
+	padding: 5px 30px;
+}
+
+.menuitems{
+	color: #f4f4f4;
+	font-size: 13px;
+	letter-spacing: 1px;
+
+	transition: color .5s;
+}
+
+.nav-item .now{
+	color: orange;
+	font-size: 20px;
+}
+
+.menuitems:hover{
+	color:skyblue;
+	font-size: 15px;
+}
+
+.lines1,.lines2,.lines3{
+	width: 25px;
+	height: 3px;
+	margin: 6px;
+}
+
+.crossxs .lines1{
+	transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines2{
+	opacity: 0;
+}
+
+.crossxs .lines3{
+	transform: rotate(45deg) translate(-6px,-6px);;
+}
+
+/*End Nav Bar*/
+
+/*Start banner*/
+.banners{
+	width: 80%;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	transform: translate(-50%,-50%);
+}
+
+.bannerparagraphs{
+	animation-delay: 0.5s;
+
+	animation-fill-mode: backwards;
+}
+
+.bnanis{
+	animation-name: bnanis;
+	animation-duration: 2s;
+}
+
+@keyframes bnanis{
+	0%{
+		transform:translateX(-100px);
+		opacity: 0;
+	}
+
+	100%{
+		transform:translateX(0px);
+		opacity: 1;
+	}
+}
+
+/*End Banner*/
+
+/*End Header Section*/
+
+
+/* Start About US Section */
+
+@keyframes fromleftani{
+
+	0%{
+		transform: translateX(-120px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes fromrightani{
+	0%{
+		transform: translateX(120px);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+.fromlefts{
+	animation-name: fromleftani;
+	animation-duration: 3s;
+}
+
+.fromrights{
+	animation-name: fromrightani;
+	animation-duration: 3s;
+}
+
+.aboutuss{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)), url(./assets/img/frst.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutuss .lines{
+	width: 30%;
+	height: 1.2px;
+	background-color: #fff;
+	margin-bottom: 3px;
+}
+
+.aboutuss .lines:nth-of-type(2){
+	width: 20%;
+	height: 1px;
+}
+
+.aboutuss .lines:nth-of-type(3){
+	width: 10%;
+	height: 0.5px;
+	margin-bottom: 30px;
+}
+
+.aboutuss h5{
+	background-color: #f4f4f4;
+	color:#000;
+	border-left: 5px solid var(--fruit-color);
+	padding: 10px;
+}
+
+.aboutuss h5 ~ p{
+	text-align: left;
+	margin: 30px 0;
+}
+
+
+.aboutuss img{
+	width: 350px;
+
+	position: absolute;
+	top: 0;
+} 
+
+/*End About Us Section*/
+
+/*Start Projects Section*/
+
+.projects{
+	position: relative;
+}
+
+.projects .lines{
+	width: 30%;
+	height: 1.2px;
+	background-color: #000;
+	margin-bottom: 3px;
+}
+
+.projects .lines:nth-of-type(2){
+	width: 20%;
+	height: 1px;
+}
+
+.projects .lines:nth-of-type(3){
+	width: 10%;
+	height: 0.5px;
+	margin-bottom: 30px;
+}
+
+.projects h5{
+	background-color: #f4f4f4;
+	color:#000;
+	border-left: 5px solid var(--fruit-color);
+	padding: 10px;
+}
+
+.projects h5 ~ p{
+	text-align: left;
+	margin: 30px 0;
+	color: #000;
+}
+
+
+.projects img{
+	width: 300px;
+
+	position: absolute;
+	bottom: 0;
+} 
+
+/*END Project Section*/
+
+/*Start Policy Section*/
+
+.policies{
+	background-color: var(--primary-color);
+}
+
+.policies .pcfile{
+	width: 200px;
+	height: 200px;
+}
+
+/*End Contact Section*/
+/* Start Footer Section*/
+	
+.footerlinks{
+	color: #f4f4f4;
+	text-decoration: none;
+	font-size: 13px;
+
+	transition: all .3s;
+}
+
+.footerlinks:hover{
+	color: orange;
+	letter-spacing: 1px;
+	border-bottom: 1px solid orange;
+}
+/* End Footer Section*/
+
+/* 16DD */
+
+/* Start Contact section */
+
+.contacts .links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contacts .tgram{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: url(./assets/img/telegram.jpeg);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+.contacts .fbook{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: url(./assets/img/fb.jpeg);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+.contacts .ig{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: url(./assets/img/insta.jpeg);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+.contacts .linkin{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-image: url(./assets/img/linkedin.png);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+/* Start something from  projects file*/
+
+.just{
+	background-color: var(--primary-color);
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.just .lines{
+	width: 30%;
+	height: 1.2px;
+	background-color: #fff;
+	margin-bottom: 3px;
+}
+
+.just .lines:nth-of-type(2){
+	width: 20%;
+	height: 1px;
+}
+
+.just .lines:nth-of-type(3){
+	width: 10%;
+	height: 0.5px;
+	margin-bottom: 30px;
+}
+
+.just h5{
+	background-color: #f4f4f4;
+	color:#000;
+	border-left: 5px solid var(--fruit-color);
+	padding: 10px;
+}
+
+.just h5 ~ p{
+	text-align: left;
+	margin: 30px 0;
+}
+
+
+.just img{
+	width: 350px;
+
+	position: absolute;
+	top: 0;
+} 
+
+
+.hi{
+	background-color: var(--fruit-color);
+	position: relative;
+}
+
+.hi .lines{
+	width: 30%;
+	height: 1.2px;
+	background-color: #000;
+	margin-bottom: 3px;
+}
+
+.hi .lines:nth-of-type(2){
+	width: 20%;
+	height: 1px;
+}
+
+.hi .lines:nth-of-type(3){
+	width: 10%;
+	height: 0.5px;
+	margin-bottom: 30px;
+}
+
+.hi h5{
+	background-color: #f4f4f4;
+	color:#000;
+	border-left: 5px solid var(--fruit-color);
+	padding: 10px;
+}
+
+.hi h5 ~ p{
+	text-align: left;
+	margin: 30px 0;
+	color: #000;
+}
+
+
+.hi img{
+	width: 300px;
+
+	position: absolute;
+	bottom: 0;
+} 
