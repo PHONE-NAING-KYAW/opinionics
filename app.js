@@ -11,7 +11,7 @@ $(document).ready(function(){
 		}else{
 			$('.btn-backtotops').fadeOut(1000);
 		}
-	})
+	});
 	// End Back to top
 	// Start Nav Bar
 		$(window).scroll(function(){
